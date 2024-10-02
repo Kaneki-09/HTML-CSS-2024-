@@ -31,3 +31,35 @@ header h1{
     letter-spacing: 0.05em;
     text-align:center;
 }
+
+/* main */
+
+/* about */
+.about{
+    padding: 240px 297px 80px 0;
+    background: url(./images/bg_main.png) no-repeat center center/contain;
+}
+
+.recruit{
+    display: block;
+    width: 343px;
+    height:266px;
+    padding:38px;
+    background-color: #fff;
+}
+
+.recruit p{
+    padding-bottom: 20px;
+    font-size:18px;
+    line-height: 1.67;
+    letter-spacing: 0.05em;
+}
+
+.recruit h2{
+    font-size:36px;
+    font-weight: demibold;
+    line-height: 1.39;
+    letter-spacing: 0.05em;
+}
+
+/* disussion */
