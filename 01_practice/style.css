@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body{
+    color:#000;
+    font-size: 14px;
+    font-size:normal;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    line-height:1.7;
+    letter-spacing:0;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    vertical-align:bottom;
+}
+
+.inner{
+    max-width:1260px;
+    width:86.49%;
+    margin-left:auto;
+    margin-right:auto;
+}
