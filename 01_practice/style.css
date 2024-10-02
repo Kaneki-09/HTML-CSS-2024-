@@ -37,7 +37,7 @@ header h1{
 /* about */
 .about{
     padding: 240px 297px 80px 0;
-    background: url(./images/bg_main.png) no-repeat center center/contain;
+    background: url(./images/bg_main.png) no-repeat center center/cover;
 }
 
 .recruit{
@@ -63,3 +63,24 @@ header h1{
 }
 
 /* disussion */
+.allpost h2{
+    margin-top:155px;
+    margin-bottom:70px;
+    font-size:36px;
+    font-weight:normal;
+    line-height: 1.67;
+    letter-spacing: 0.043em;
+    text-align: center;
+}
+
+.post article{
+    margin-bottom:100px;
+}
+
+.post article:nth-child(1)::before{
+    content:"公文式教育が提供する価値を、より高めていくための取り組みとは何か？";
+    display:inline-block;
+    position:absolute;
+    bottom:20px;
+    left:20px;
+}
