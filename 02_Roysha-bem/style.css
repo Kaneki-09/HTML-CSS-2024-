@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body{
-color:#6C6CfC;
+color:#6C6C6F;
 font-size:16px;
 font-family:Helvetica,Arial,sans-serif;
 line-height:1.75;
@@ -36,6 +36,10 @@ img{
 
 .unit__text {
     margin-bottom: 40px;
+}
+
+.unit--center{
+    text-align:center;
 }
 
 /* card */
@@ -169,3 +173,31 @@ header{
 .payment__pic{
     width:46%;
 }
+
+
+/* services
+------------------------------------------------*/
+.wedo{
+    padding:80px 0;
+}
+
+.wedo__inner{
+        max-width: 1200px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.wedo__info{
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+/* help
+------------------------------------------------*/
