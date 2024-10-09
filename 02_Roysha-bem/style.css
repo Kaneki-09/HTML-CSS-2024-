@@ -72,6 +72,40 @@ header{
 
 .features__list{
     width:46%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.features__item{
+    width:46%;
+}
+
+/* payment */
+.payment{
+    padding:80px 0;
+    background-color:#F7FAFF;
+}
+
+.payment__inner{
+    max-width: 1200px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:32px;
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.payment__info{
+    width:46%;
+}
+
+.payment__pic{
+    width:46%;
 }
 
 .btn{
