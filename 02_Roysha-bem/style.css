@@ -70,8 +70,6 @@ img{
 }
 
 .btn--second {
-    margin-top:40px;
-    width:100%;
     background-color: #2DBE61;
 }
 
@@ -219,6 +217,12 @@ header{
     width:30%;
     padding:40px;
     background-color:#fff;
+}
+
+.wedo__item .btn{
+    margin-top: 40px;
+    width: 100%;
+    max-width:200px;
 }
 
 /* offer */
