@@ -8,6 +8,7 @@
 }
 
 $color-text: #888888;
+$color-main: #202124;
 
 body{
     color:$color-text;
@@ -24,5 +25,20 @@ body{
 
     &__inner{
         @include inner();
+    }
+}
+
+/* footer */
+.footer{
+    padding: 100px 0 40px;
+    background-color: $color-main;
+    color: #fff;
+
+    &__inner{
+        @include inner();
+    }
+
+    &__copy{
+        font-size: 12px;
     }
 }
