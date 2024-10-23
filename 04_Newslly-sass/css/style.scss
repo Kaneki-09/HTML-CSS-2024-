@@ -129,6 +129,10 @@ body{
     text-transform: uppercase;
 }
 
+.btn__about{
+    background-color: $color-main;
+}
+
 /* index.html
 ----------------------------------------------------------------*/
 /* more */
@@ -173,5 +177,48 @@ body{
 
     &__item{
         width: (380/800)*100%;
+    }
+}
+
+
+
+/* about.html
+----------------------------------------------------------------*/
+/* about */
+.about{
+    margin-bottom:60px;
+
+    &__inner{
+        @include inner();
+    }
+
+    .post{
+        margin-bottom: 40px;
+
+        &__title{
+            border-bottom: 1px solid #DDDDDD;
+        }
+    }
+}
+
+/* discovery */
+.discovery{
+    padding: 60px 0;
+    background-color: $color-bg;
+
+    &__inner{
+        @include inner();
+    }
+
+    &__title{
+        @include title-main();
+    }
+
+    &__list{
+        @include flex(flex-start);
+    }
+
+    &__item{
+        width: (240/800)*100%;
     }
 }
