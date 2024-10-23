@@ -64,6 +64,71 @@ body{
     }
 }
 
+/* post */
+.post{
+    &__category{
+        margin-bottom: 10px;
+        color: $color-accent;
+        font-size: 12px;
+        font-style: oblique;
+        text-transform: uppercase;
+    }
+
+    &__title{
+        margin-bottom: 15px;
+            color: $color-main;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: (23/18);
+    }
+}
+
+/* card */
+.card{
+    background-color: #fff;
+
+    &__body{
+        padding: 35px;
+    }
+
+    &__title{
+        margin-bottom:15px;
+        color: $color-main;
+        font-size:18px;
+        font-weight: bold;
+        line-height: (23/18);
+    }
+
+    &:last-child{
+        margin-bottom:0;
+    }
+}
+
+/* time */
+.time{
+    margin-top: 20px;
+    padding-left: 26px;
+    color: $color-time;
+    font-size: 12px;
+    background: url(../images/icon_time.png) no-repeat left center;
+}
+
+/* btn */
+.btn{
+    display: block;
+    width: 160px;
+    margin-top: 25px;
+    margin-left: auto;
+    padding: 14px;
+    background-color: $color-accent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 /* index.html
 ----------------------------------------------------------------*/
 /* more */
@@ -86,5 +151,27 @@ body{
     &__item{
         width: (380/800)*100%;
         margin-bottom: 60px;
+    }
+}
+
+/* trending */
+.trending{
+    padding:60px 0;
+    background-color:$color-bg;
+
+    &__inner{
+        @include inner();
+    }
+
+    &__title{
+        @include title-main();
+    }
+
+    &__list{
+        @include flex(flex-start);
+    }
+
+    &__item{
+        width: (380/800)*100%;
     }
 }
