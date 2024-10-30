@@ -259,20 +259,25 @@ img {
     }
 }
 
+
 /* about.html
 -----------------------*/
+/* concept */
 .concept {
     margin: 60px 0 100px;
     text-align: center;
 
     &__inner {
-        @include m-inner();
+        @include m-inner($w: (755/1200)*100%);
     }
 
     &__title {
+        margin-bottom: 75px;
+        padding-bottom: 15px;
         font-size: 42px;
         font-weight: bold;
         line-height: (50/42);
+        border-bottom: 4px solid $color-main;
     }
 
     &__text {
