@@ -5,13 +5,13 @@ $color-text: #5A5A5A;
 $color-title: #2B2B2B;
 
 $breakpoints: (
-    "tablet":"screen and (min-width:640px)",
-    "desktop":"screen and (min-width:800px)",
-    "full":"screen and (min-width:900px)",
+    "tablet": "screen and (min-width: 640px)",
+    "desktop": "screen and (min-width: 800px)",
+    "full": "screen and (min-width: 900px)",
     ) !default;
 
 @mixin m-query($breakpoint) {
-    @media #{map-get($breakponts,$breakpoint)} {
+    @media #{map-get($breakpoints,$breakpoint)} {
         @content;
     }
 }
@@ -38,6 +38,7 @@ $breakpoints: (
     line-height: (46/38
     );
 letter-spacing: (25em/1000);
+text-align: center;
 }
 
 body {
@@ -80,6 +81,10 @@ img {
     &__inner {
         @include m-inner();
     }
+
+    &__copy {
+        color: #fff;
+    }
 }
 
 /* nav */
@@ -99,10 +104,12 @@ img {
     }
 }
 
+/* index.html
+-----------------------*/
 /* about */
 .about {
     margin-bottom: 80px;
-    padding: 280px 0 310px;
+    padding: 375px 0 310px;
     background: url("../images/bg_mainvisual.png") no-repeat center center/cover;
 
     &__inner {
@@ -110,7 +117,175 @@ img {
     }
 
     &__title {
+        margin-bottom: 40px;
+        color: #fff;
+        font-size: 46px;
+        font-weight: bold;
+        line-height: (55/46);
+        letter-spacing: (25em/1000);
+    }
+
+    & span {
+        color: $color-main;
+    }
+
+    &__text {
+        color: #fff;
+        text-align: center;
+    }
+
+    & .btn {
+        margin-left: 0;
+
+        @include m-query(tablet) {
+            margin-left: auto;
+        }
+    }
+}
+
+/* btn */
+.btn {
+    display: block;
+    width: 200px;
+    margin: 80px auto 0;
+    padding: 15px 45px;
+    color: #fff;
+    background-color: $color-main;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-second {
+    margin: 40px auto 0;
+    background-color: #EDAA14;
+}
+
+/* updates */
+.updates {
+    &__inner {
+        @include m-inner();
+        margin-bottom: 80px;
+    }
+
+    &__title {
         @include m-title-main();
-        margin: 0 40px auto;
+    }
+
+    &__list {
+        margin-bottom: -60px;
+        @include m-flex();
+    }
+
+    &__item {
+        margin-bottom: 60px;
+
+        @include m-query(desktop) {
+            width: (260/900)*100%;
+        }
+
+        & img {
+            width: 100%;
+            aspect-ratio: 560/315;
+            object-fit: cover;
+
+            @include m-query(desktop) {
+                aspect-ratio: 260/195;
+            }
+        }
+    }
+}
+
+/* post */
+.post {
+
+    &__title {
+        display: block;
+        width: 240px;
+        margin-top: 25px;
+        padding: 7px 10px;
+        color: #fff;
+        background-color: #000;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &__text {
+        margin-top: 20px;
+    }
+}
+
+/* about.html
+-----------------------*/
+/* services */
+.services {
+    &__inner {
+        @include m-inner();
+        margin-bottom: 80px;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+        padding-top: 180px;
+        @include m-title-main();
+    }
+
+    &__list {
+        margin-bottom: -60px;
+        @include m-flex(space-between);
+    }
+
+    &__item {
+        margin-bottom: 60px;
+
+        @include m-query(desktop) {
+            width: (420/900)*100%;
+        }
+
+        & img {
+            width: 100%;
+            aspect-ratio: 560/373;
+            object-fit: cover;
+
+            @include m-query(desktop) {
+                aspect-ratio: 420/315;
+            }
+        }
+
+        & .post__title:nth-child(2n+2) {
+            margin-left: auto;
+        }
+    }
+}
+
+/* testimonials */
+.test {
+    padding: 80px 0;
+    background: url(../images/bg_testimonials.png) no-repeat center center/cover;
+
+    &__inner {
+        @include m-inner();
+        padding-bottom: 50px;
+        background-color: #fff;
+    }
+
+    &__title {
+        padding-top: 50px;
+        @include m-title-main();
+    }
+
+    &__pic {
+        text-align: center;
+    }
+
+    &__text {
+        margin: 38px 50px 30px;
+        font-size: 16px;
+        font-style: italic;
+        line-height: (32/16);
+        text-align: center;
+    }
+
+    & p {
+        text-align: center;
     }
 }
