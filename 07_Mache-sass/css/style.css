@@ -224,7 +224,7 @@ img {
     aspect-ratio: 420/315;
   }
 }
-.services__item .post__title:nth-child(2n+2) {
+.services__item:nth-child(odd) .post__title {
   margin-left: auto;
 }
 
